@@ -1,0 +1,161 @@
+/* === Global Styles === */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0b5ed7;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #0d6efd !important;
+}
+
+.navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.navbar-shrink {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* === Hero Section === */
+#hero {
+  background: linear-gradient(to right, #f04c2f, #ffd726);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero p {
+  font-size: 1.25rem;
+}
+
+/* === About Section === */
+#about img {
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+#about ul {
+  padding-left: 1.2rem;
+}
+
+/* === Skills Section === */
+#skills {
+  background-color: #fff;
+}
+
+#skills .col-md-3 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .col-md-3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(111, 66, 193, 0.2);
+}
+
+/* === Cards (Projects / Achievements) === */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* === Contact Section === */
+#contact {
+  background-color: #f1f3f5;
+}
+
+form .form-control {
+  border-radius: 0.5rem;
+}
+
+form .btn-primary {
+  border-radius: 0.5rem;
+}
+
+/* === Footer === */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* === Back to Top Button === */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* === Animation on Scroll === */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
